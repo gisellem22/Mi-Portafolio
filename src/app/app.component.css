@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    overflow:hidden;
+  }
+  .brand {
+    font-family: 'Parisienne', cursive;
+    font-size:50px;
+    width:500px;
+    margin-top: -20px;
+}
+  .bar {
+    background: #ea9999;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+    max-height: 75px
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  nav ul li {
+    float: left;
+    font-family: 'Delius', cursive;
+    font-size:25px;
+    margin-top: -5px;
+
+  }
+  nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .list-options:hover {
+    background: #fdaead;
+  }
+  .contenido {
+    padding-top: 100px;
+  }
+  
