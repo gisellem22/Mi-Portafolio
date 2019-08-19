@@ -4,13 +4,16 @@
 .navbar-light .navbar-nav .nav-link {
   color:white;
   font-family: 'Delius', cursive;
-  font-size:25px;
+  font-size:20px;
 }
 
 .navbar-brand {
   font-family: 'Parisienne', cursive;
-  font-size:50px;
+  font-size:40px;
   color:white;
+}
+.navbar-nav {
+ align-self: right;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
