@@ -1,4 +1,47 @@
-* {
+.navbar-light {
+  background-color: #ea9999 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:white;
+  font-family: 'Delius', cursive;
+  font-size:25px;
+}
+
+.navbar-brand {
+  font-family: 'Parisienne', cursive;
+  font-size:50px;
+  color:white;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: #ffdcdb;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+ background-color: #ffdcdb;
+ border-radius: 2px;
+}
+
+.content {
+  padding-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     padding: 0;
     margin: 0;
   }
@@ -6,15 +49,18 @@
     margin-bottom: 20px;
   }
   .wrapper {
-    width: 90%;
     margin: auto;
     overflow:hidden;
+
   }
   .brand {
     font-family: 'Parisienne', cursive;
     font-size:50px;
-    width:500px;
-    margin-top: -20px;
+    width:auto;
+    margin-left: 20px;
+    margin-top: -15px;
+    text-decoration:none;
+    color:white;
 }
   .bar {
     background: #ea9999;
@@ -24,22 +70,22 @@
   }
   
   nav {
-    float: left; /* Desplazamos el nav hacia la izquierda */
+    float: right;
     max-height: 75px
   }
   nav ul {
     list-style: none;
-    overflow: hidden; /* Limpiamos errores de float */
+    overflow: hidden; 
   }
   nav ul li {
     float: left;
     font-family: 'Delius', cursive;
     font-size:25px;
-    margin-top: -5px;
+    margin-top: -10px;
 
   }
   nav ul li a {
-    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    display: block;
     padding: 30px;
     color: #fff;
     text-decoration: none;
@@ -50,4 +96,16 @@
   .contenido {
     padding-top: 100px;
   }
-  
+  @media screen and (max-width:1025px) {
+    .bar {
+		width:80%;
+		height:100%;
+		margin:0;
+        position: fixed;
+    }
+    nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+  } */
