@@ -1,7 +1,12 @@
 <div class="container">
-        <div class="text-center">
-                <h3>HABILIDADES EN CONSTRUCCIÓN</h3>
-            <img src="../../../assets/img/icons/en-construcion.png" class="img-fluid" alt="EN CONSTRUCCIÓN">
+    <h4 class="mb-4">Habilidades</h4>
+    <div class="row">
+        <div class="card col-12 col-sm-6 col-md-4 border-0" *ngFor="let skill of skills">
+                <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name">
+                <div class="card-body">
+                    <h4 class="card-title">{{skill.name}}</h4>
+                    <h6 class="card-text">{{skill.text}}</h6>
+                </div>
+            </div>
         </div>
-        </div>
-   
+    </div>
