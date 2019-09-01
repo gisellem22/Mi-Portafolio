@@ -1,8 +1,4 @@
-h1,h2,h3,h4,h5 {
-    font-family: 'Delius', cursive;
-    color: #d86868;
-}   
-img {
+ img {
     padding: 10px;
 	display:block;
 	margin:auto;
@@ -11,4 +7,7 @@ img {
 }
 .card-title, .card-text {
     text-align: center;
+}
+.text-content {
+	background: #f9f9f9;
 }
