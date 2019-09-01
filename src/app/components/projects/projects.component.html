@@ -1,9 +1,17 @@
 <div class="nav-container">
-    <app-navbar></app-navbar>
-</div><div class="container" style="margin-top: 100px">
-        <div class="text-center">
-                <h3>PROYECTOS EN CONSTRUCCIÓN</h3>
-            <img src="../../../assets/img/icons/en-construcion.png" class="img-fluid" alt="EN CONSTRUCCIÓN">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="container"style="margin-top: 100px">
+        <!-- <h5 class="mb-3">HABILIDADES</h5> -->
+        <div class="row justify-content-center">
+            <div class="card col-12 col-sm-6 col-md-6 col-lg-6 border-0" *ngFor="let project of projects">
+                   <div class="text-center p-2 rounded" style="background: #f9f9f9">
+                    <img [src]="project.img" class="card-img-top img-fluid rounded" [alt]="project.name">
+                   </div> 
+                    <div class="card-body mb-3">
+                        <h5 class="card-title">{{project.name}}</h5>
+                        <p class="card-text">{{project.text}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-   

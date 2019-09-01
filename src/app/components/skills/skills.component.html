@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="card col-12 col-sm-6 col-md-4 col-lg-4 border-0" *ngFor="let skill of skills">
                 <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name">
-                <div class="card-body text-content mb-3">
+                <div class="card-body mb-3 rounded" style="background: #f9f9f9;">
                     <h5 class="card-title">{{skill.name}}</h5>
                     <p class="card-text">{{skill.text}}</p>
                 </div>
