@@ -1,15 +1,17 @@
 <div class="nav-container">
     <app-navbar></app-navbar>
 </div>
-<div class="container"style="margin-top: 100px">
+<div class="container" style="margin-top: 100px" data-aos="fade-up" data-aos-duration="2000">
     <!-- <h5 class="mb-3">HABILIDADES</h5> -->
     <div class="row justify-content-center">
         <div class="card col-12 col-sm-6 col-md-4 col-lg-4 border-0" *ngFor="let skill of skills">
+            <div class="rounded-top" style="background: #f9f9f9">
                 <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name">
-                <div class="card-body mb-3 rounded" style="background: #f9f9f9;">
-                    <h5 class="card-title">{{skill.name}}</h5>
-                    <p class="card-text">{{skill.text}}</p>
-                </div>
+            </div>
+            <div class="card-body mb-4 rounded-bottom" style="background: #f9f9f9">
+                <h5 class="card-title">{{skill.name}}</h5>
+                <p class="card-text">{{skill.text}}</p>
             </div>
         </div>
     </div>
+</div>

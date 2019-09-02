@@ -26,5 +26,48 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.25rem;
-    text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width:1024px) and (max-width:2000px){
+   
+    .my-email {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .logoimg {
+        width: 40%;
+        height: 40%;
+    }
+}
+@media screen and (min-width:995px) and (max-width:1024px){
+    
+    .my-email {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .logoimg {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:995px){
+    
+    .my-email {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .logoimg {
+        width: 50%;
+        height:50%;
+    }
+}
+@media screen and (max-width:320px){
+    .my-email {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .logoimg {
+        width: auto;
+        height: auto;
+    }
 }
