@@ -1,40 +1,48 @@
 <div class="nav-container">
     <app-navbar></app-navbar>
 </div>
-<div class="container" style="margin-top: 100px">
-    <h5 data-aos="zoom-in" data-aos-duration="2000">SOBRE MI</h5>
-    <div class="row mt-3">
-        <div class="col-md-4 mb-5" data-aos="zoom-in" data-aos-duration="2000">
-            <div class="text-center">
-                <img src="../../../assets/img/gisellemachado.jpg" class="img-fluid rounded " alt="Foto de Perfil">
+<div class="container" style="margin-top: 120px">
+        <h5 data-aos="zoom-in" data-aos-duration="2000">SOBRE MI</h5>
+
+    <div class="row mt-5" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="col-md-4 mb-5">
+            <div class="text-center p-2"  style="background: #f9f9f9">
+                <img src="../../../assets/img/giselle.jpeg" class="img-fluid rounded " alt="Foto de Perfil">
             </div>
         </div>
-        <div class="col-md-8" data-aos="fade-down" data-aos-duration="2000">
-            <div class="text-break p-3  rounded" style="background: #f9f9f9">
-                    <p>Hola, Soy Giselle Machado... Dedicada al desarrollo Front-end, soy una profesional dinámica, organizada, 
-                            flexible y con capacidad de auto-aprendizaje. Me encantan los desafíos y la lógica. 
-                            Trabajar en equipo para mí es algo natural. Me defino como una persona humana y empática. 
-                            Soy hablante nativa de portugués, hablo inglés y español con fluidez. </p>
+        <div class="col-md-8">
+            <div class="text-break rounded">
+                <p class="mt-1"> ¡Hola! Me llamo Giselle Machado y soy <span class="highlight">Front-End Developer</span>.
+                    Soy brasileña y actualmente vivo en Santiago de Chile. Hablo portugués, inglés y
+                    español con fluidez.
+                    Me encantan los desafíos y la lógica.
+                </p>
+                <p> En mis tiempos libres me encanta pintar <span class="highlight">acuarelas</span>.</p>
+                
+                <!-- <p> echa un ojito en mi <a class="link" href="https://drive.google.com/open?id=1d3DvB1O_rGXvI7AHvVTRvHuLZuVKnqm1" target="_blank">CV</a></p> -->
+
             </div>
-            <div >
-                <div class="text-break p-3 rounded mt-4">
-                    <div>
-                            <h6>SÍGUEME</h6>
-                        <a href="https://github.com/gisellem22">
-                            <img class="img-fluid" width="40" src="../../../assets/img/icons/github.png"
-                                alt="logo whatsapp">
-                        </a>
-                        <a href="https://www.linkedin.com/in/giselle-machado-gm/">
-                            <img class="img-fluid ml-3" width="40" src="../../../assets/img/icons/linkedin.png"
-                                alt="logo whatsapp">
-                        </a>
-                        <a href="https://www.instagram.com/gisellee.machado/">
-                            <img class="img-fluid ml-3" width="40" src="../../../assets/img/icons/instagram.png"
-                                alt="logo whatsapp">
-                        </a>
+    </div>
+</div>   
+<section >
+        <h5  class="my-5" data-aos="zoom-in" data-aos-duration="2000">HABILIDADES</h5>
+
+        <div class="row justify-content-center mb-5" data-aos="fade-down" data-aos-duration="2000" >
+                <div class="card col-6 col-sm-6 col-md-3 col-lg-2 border-0" *ngFor="let skill of skills">
+                    <div class="rounded-top">
+                        <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name">
+                    </div>
+                    <div class="card-body mb-5 rounded-bottom">
+                        <h5 class="card-title">{{skill.name}}</h5>
+                        <!-- <p class="card-text">{{skill.text}}</p> -->
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> 
+</section>  
+        
 </div>
+<!-- <img src="../../../assets/img/watercolors/mont.JPG" alt="">
+<img src="../../../assets/img/watercolors/Captura.JPG" alt="">
+<img src="../../../assets/img/watercolors/across.JPG" alt="">
+<img src="../../../assets/img/watercolors/aurora.JPG" alt="">
+<img src="../../../assets/img/watercolors/bird.JPG" alt=""> -->

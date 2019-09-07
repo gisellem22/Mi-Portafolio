@@ -4,7 +4,7 @@
 }
 body {
     background: #ffffff;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Montserrat', sans-serif;
     color: #333333;
     font-size: 16px;
     word-spacing: 2px;
@@ -12,7 +12,6 @@ body {
 .nav-container {
     position: fixed;
     top: 0;
-    /* overflow: hidden; */
     z-index: 10;
     width: 100%;
   }
@@ -21,9 +20,8 @@ h1,h2,h3,h4,h5 {
     color: #666666  ;
 }   
 p {
-    font-family: inherit;
-    font-weight: normal;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 1.25rem;
 }
@@ -53,7 +51,7 @@ p {
 @media screen and (min-width:320px) and (max-width:995px){
     
     .my-email {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
     }
     .logoimg {
@@ -63,7 +61,7 @@ p {
 }
 @media screen and (max-width:320px){
     .my-email {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
     }
     .logoimg {

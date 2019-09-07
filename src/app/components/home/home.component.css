@@ -1,4 +1,10 @@
-/* img {
-    max-width: 1000px;
-    max-height: 500px;
-} */
+.welcome {
+    color: #666666;
+    text-decoration-line: none;
+}
+
+
+/* .btn-outline-secondary:hover {
+    background-color: #ffdcdb;
+    border-radius: 2px;
+  } */
