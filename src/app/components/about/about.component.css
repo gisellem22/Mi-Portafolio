@@ -3,7 +3,9 @@
 }
 .highlight {
     color: #E61A55;
-    font-weight: bold;
+}
+.highlight:hover {
+    text-decoration: underline;
 }
 .card-img-top {
     padding: 10px;
@@ -21,4 +23,23 @@
 }
 .link {
     color: #E61A55;
+}
+.modal-header {
+    border-bottom: 5px solid #ffdcdb;
+}
+.modal-footer {
+    border-top: 5px solid #ffdcdb;
+}
+.modal-content {
+    background-color: #ffdcdb;
+    border: none;
+}
+.modal-title {
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.close {
+    color: #ffffff;
+    opacity: 1;
 }

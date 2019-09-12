@@ -4,4 +4,5 @@ export class project {
     public img?: string;
     public demo?: string;
     public code?: string;
+    public npm?: string;
   }

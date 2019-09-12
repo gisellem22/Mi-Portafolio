@@ -15,8 +15,7 @@ body {
     z-index: 10;
     width: 100%;
   }
-h1,h2,h3,h4,h5 {
-    font-family: 'Montserrat', sans-serif;
+h1,h2,h3,h4,h5,h6 {
     color: #666666  ;
 }   
 p {
@@ -24,8 +23,14 @@ p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 1.25rem;
+    word-spacing: 1px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #666666;;
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+  }
 @media screen and (min-width:1024px) and (max-width:2000px){
    
     .my-email {
@@ -58,6 +63,9 @@ p {
         width: 50%;
         height:50%;
     }
+    .navbar-light .navbar-nav .nav-link {
+        margin-top: 15px;
+      }
 }
 @media screen and (max-width:320px){
     .my-email {
@@ -68,4 +76,7 @@ p {
         width: auto;
         height: auto;
     }
+    .navbar-light .navbar-nav .nav-link {
+        margin-top: 15px;
+      }
 }
