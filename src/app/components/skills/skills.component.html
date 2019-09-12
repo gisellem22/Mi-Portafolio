@@ -1,12 +1,16 @@
-<h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000">HABILIDADES</h5>
+<h5 class="my-5">HABILIDADES</h5>
 
-        <div class="row justify-content-center mt-2 mb-5" data-aos="fade-down" data-aos-duration="2000">
-            <div class="card col-12 col-sm-6 col-md-3 col-lg-2 border-0" *ngFor="let skill of skills">
-                <div class="rounded-top">
-                    <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name">
-                </div>
-                <div class="card-body mb-4 rounded-bottom">
-                    <h6 class="card-title">{{skill.name}}</h6>
-                </div>
-            </div>
+<div class="row justify-content-center mt-2 mb-5">
+    <div class="card col-12 col-sm-6 col-md-3 col-lg-2 border-0" *ngFor="let skill of skills">
+        <div class="iconos-box rounded-top">
+            <div class="icons"><i [class]="skill.icon"></i></div>
         </div>
+        <div class="card-body mb-5 rounded-bottom">
+            <h6 class="card-title">{{skill.name}}</h6>
+        </div>
+    </div>
+</div>
+
+<!--data-aos="zoom-in" data-aos-duration="2000"-->
+<!--data-aos="fade-down" data-aos-duration="2000"-->
+<!-- <img [src]="skill.icon" class="card-img-top img-fluid" [alt]="skill.name"> -->
