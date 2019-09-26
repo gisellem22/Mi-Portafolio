@@ -1,4 +1,45 @@
-h1,h2,h3,h4,h5 {
-    font-family: 'Delius', cursive;
-    color: #d86868;
-}   
+.text-content {
+    background: #f9f9f9;
+}
+.highlight {
+    color: #E61A55;
+}
+.highlight:hover {
+    text-decoration: underline;
+}
+.card-img-top {
+    padding: 10px;
+	display:block;
+	margin:auto;
+	width: 90px;
+	height:90px;
+}
+.card-title, .card-text {
+    text-align: center;
+}
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.link {
+    color: #E61A55;
+}
+.modal-header {
+    border-bottom: 5px solid #ffdcdb;
+}
+.modal-footer {
+    border-top: 5px solid #ffdcdb;
+}
+.modal-content {
+    background-color: #ffdcdb;
+    border: none;
+}
+.modal-title {
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.close {
+    color: #ffffff;
+    opacity: 1;
+}

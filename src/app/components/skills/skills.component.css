@@ -1,0 +1,21 @@
+ img {
+    padding: 10px;
+	display:block;
+	margin:auto;
+	width: 90px;
+	height:90px;
+}
+.card-title, .card-text {
+    text-align: center;
+}
+
+.icons{
+	text-align:center;
+  
+  }
+  .icons i{
+	color: #E61A55;
+	font-size:60px;
+	padding: 30px; 
+	margin: 0;
+  }
