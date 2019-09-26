@@ -13,7 +13,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  // { path: 'skills', component: SkillsComponent },
+  { path: 'skills', component: SkillsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   imports: [    
     RouterModule.forRoot(
       appRoutes,
-      { scrollPositionRestoration: 'enabled' }
+      { enableTracing: false, scrollPositionRestoration: 'enabled' }
     )
   ],
   exports: [RouterModule]
