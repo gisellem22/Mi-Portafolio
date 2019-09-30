@@ -14,7 +14,6 @@ projects: project[];
   ngOnInit() {
     this.SkillsService.getProjectsList().subscribe(projects => {
       this.projects =projects;
-      console.log(this.projects)
     });
   }
 

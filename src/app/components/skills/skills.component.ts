@@ -16,7 +16,6 @@ skills: skill[];
   ngOnInit() {
 this.SkillsService.getSkillsList().subscribe(skills => {
       this.skills =skills;
-      console.log(this.skills)
     });
   }
 
