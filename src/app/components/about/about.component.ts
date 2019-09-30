@@ -18,11 +18,9 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.SkillsService.getSkillsList().subscribe(skills => {
       this.skills =skills;
-      console.log(this.skills)
     });
     this.SkillsService.getWatercolorsList().subscribe(watercolors => {
       this.watercolors =watercolors;
-      console.log(this.watercolors)
     });
   }
 }
