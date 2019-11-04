@@ -23,12 +23,20 @@ export let projects: project[] = [
         code: "https://github.com/gisellem22/Deseafio-Hotel"
     },
     {
-        name: "GIGIBOOK",
-        text: "Interfaz web que represente la sección de comentarios de una plataforma. Implementada con Angular, Firebase RealTime Firestore y Bootstrap.",
-        img: "../../../assets/img/projects/comentarios.JPG",
-        demo: "https://desafio-comentarios.firebaseapp.com",
-        code: "https://github.com/gisellem22/Desafio-Comentarios"
+        name: "Github Search",
+        text: "Aplicación SPA que consume la API de Github y ve los repositorios de un usuario específico. Desarrollado en Angular, despliegue en Firebase. CSS responsivo sin uso de frameworks.",
+        img: "../../../assets/img/projects/github.png",
+        demo: "https://concrete-challenge.web.app/home",
+        code: "https://github.com/gisellem22/frontend-recruiting-hsa"
     },
+    // },
+    // {
+    //     name: "GIGIBOOK",
+    //     text: "Interfaz web que represente la sección de comentarios de una plataforma. Implementada con Angular, Firebase RealTime Firestore y Bootstrap.",
+    //     img: "../../../assets/img/projects/comentarios.JPG",
+    //     demo: "https://desafio-comentarios.firebaseapp.com",
+    //     code: "https://github.com/gisellem22/Desafio-Comentarios"
+    // },
     {
         name: "POKEMÓN - I CHOOSE YOU",
         text: "Enciclopedia que agrupa información de los Pokémons de la primera generación, permitiendo al usuario realizar diversos filtros. Para su desarrollo se hizo consumo de una Api Rest de Pokémon, JavaScript y Bootstrap.",
