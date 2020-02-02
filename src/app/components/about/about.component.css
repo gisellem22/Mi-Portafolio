@@ -49,6 +49,7 @@ p {
 
 .img-frame {
     background: #ffdcdb8e;
+    cursor: pointer;
 }
 .img-slide {
     width: 100%;
