@@ -2,7 +2,7 @@
     <app-navbar></app-navbar>
 </section>
 <!-- Sobre Mi -->
-<section class="container" style="margin-top: 130px">
+<section class="container" style="margin-top: 100px">
     <h5 data-aos="zoom-in" data-aos-duration="2000">SOBRE MI</h5>
 
     <div class="row mt-4" data-aos="fade-down" data-aos-duration="2000">
@@ -28,6 +28,8 @@
                 me gusta pintar <a class="link"
                 href="https://www.instagram.com/acuarelasdegi/" target="_blank">Acuarelas</a>.</p>        
             </div>
+
+
             <!--<span class="highlight" data-toggle="modal" data-target="#modalWatercolors">(verlas aquí)</span>. -->
 
         </div>
@@ -35,12 +37,11 @@
 </section>
 <!-- CAROUSEL -->
 
-<div class="container pb-5 pt-5"  data-aos="fade-down" data-aos-duration="2000">
-    <p>Algunas de mis pinturas:</p>
+<div class="container pb-5"  data-aos="fade-down" data-aos-duration="2000">
 
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
         <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
-            <div class="img-frame text-center p-2 rounded">
+            <div class="img-frame text-center p-2 rounded" data-toggle="modal" data-target="#modalWatercolors" (click)="showWatercolor(slide.img)">
                 <img class="img-fluid rounded" src="{{ slide.img }}" alt="">
             </div>
         </div>
@@ -50,7 +51,7 @@
 <section>
 
     <!-- Modal -->
-    <!-- <div class="modal fade" id="modalWatercolors" tabindex="-1" role="dialog" aria-labelledby="modalWatercolorsTitle"
+    <div class="modal fade" id="modalWatercolors" tabindex="-1" role="dialog" aria-labelledby="modalWatercolorsTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered-scrollable" role="document">
             <div class="modal-content">
@@ -61,8 +62,8 @@
                     </button>
                 </div>
                 <div class="modal-body py-0">
-                    <div class="mb-3" *ngFor="let watercolor of watercolors">
-                        <img [src]="watercolor.img" class="img-fluid rounded" [alt]="watercolor.name">
+                    <div class="mb-3">
+                        <img [src]="watercolorModal" class="img-fluid rounded" [alt]="">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -71,5 +72,5 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </section>

@@ -12,13 +12,17 @@ import { art } from 'src/app/models/art';
 export class AboutComponent implements OnInit {
   skills: skill[];
   watercolors: art[];
+  watercolorModal: string = "../../../assets/img/watercolors/across.png";
 
   slides = [
     {img: "../../../assets/img/watercolors/across.png"},
     {img: "../../../assets/img/watercolors/aurora.png"},
     {img: "../../../assets/img/watercolors/bird.png"},
     {img: "../../../assets/img/watercolors/libertad.png"},
-    {img: "../../../assets/img/watercolors/mont.png"}
+    {img: "../../../assets/img/watercolors/mont.png"},
+    {img: "../../../assets/img/watercolors/lavander.png"},
+    {img: "../../../assets/img/watercolors/horse.png"},
+    {img: "../../../assets/img/watercolors/lamp.png"}
   ];
 
   constructor(public SkillsService: SkillsService) { }
@@ -34,8 +38,8 @@ export class AboutComponent implements OnInit {
 
   slideConfig = {
     "centerMode": true,
-    "centerPadding": '100px',
-    "slidesToShow": 3, 
+    "centerPadding": '80px',
+    "slidesToShow": 5, 
     "slidesToScroll": 1,
     "autoplay": true,
     "autoplaySpeed": 2000,
@@ -67,5 +71,7 @@ export class AboutComponent implements OnInit {
       }
     ]
   };
-
+  showWatercolor(img) {
+    this.watercolorModal = img;
+  }
 }
