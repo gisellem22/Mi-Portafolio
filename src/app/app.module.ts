@@ -13,6 +13,9 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    SlickCarouselModule,
+     
   ],
   providers: [],
   bootstrap: [AppComponent]

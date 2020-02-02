@@ -43,3 +43,11 @@
     color: #ffffff;
     opacity: 1;
 }
+
+.img-frame {
+    background: #ffdcdb8e;
+}
+.img-slide {
+    width: 100%;
+    height: 100%;;
+}
