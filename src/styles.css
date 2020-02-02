@@ -76,6 +76,9 @@ div:focus, a:focus {
     .navbar-light .navbar-nav .nav-link {
         margin-top: 15px;
       }
+    .carousel-container {
+        margin-bottom: 4rem;
+    }
 }
 @media screen and (max-width:320px){
     .my-email {
@@ -89,4 +92,7 @@ div:focus, a:focus {
     .navbar-light .navbar-nav .nav-link {
         margin-top: 15px;
       }
+    .carousel-container {
+        margin-bottom: 4rem;
+    }
 }

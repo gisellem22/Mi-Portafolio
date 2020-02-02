@@ -14,41 +14,43 @@
             <div class="text-break rounded">
                 <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000">SOBRE MI</h5>
 
-                <p class="mt-1">Soy <a class="link"
-                    href="https://www.linkedin.com/in/giselle-machado-gm/" target="_blank"><i class="fas fa-link"></i>Front-End Developer</a>,                      brasileña y actualmente vivo en Santiago de Chile.</p>
+                <p class="mt-1">Soy <a class="link" href="https://www.linkedin.com/in/giselle-machado-gm/"
+                        target="_blank"><i class="fas fa-link"></i>Front-End Developer</a>, brasileña y actualmente vivo
+                    en Santiago de Chile.</p>
                 <p>Me encantan los desafíos y la lógica, por lo que encontré en la
                     programación un camino para desarrollar la creativad y el autoaprendizaje. Estoy siempre buscando
                     aprender nuevas tecnologías y herramientas para crear soluciones y convertir ideas en proyectos
                     reales.</p>
-                
+
                 <p>Puedes ver mi <a class="link"
                         href="https://drive.google.com/open?id=1hmxT6vTEP93Vxfn6FAXiB6mmqy9wI4Ut" target="_blank">CV
                         aquí</a>.</p>
 
                 <p>Hablo portugués, inglés y español con fluidez. Amo leer libros de aventuras y en mis tiempos libres
-                me gusta pintar <a class="link"
-                href="https://www.instagram.com/acuarelasdegi/" target="_blank">Acuarelas</a>.</p>        
+                    me gusta pintar <a class="link" href="https://www.instagram.com/acuarelasdegi/"
+                        target="_blank">Acuarelas</a>.</p>
             </div>
 
 
             <!--<span class="highlight" data-toggle="modal" data-target="#modalWatercolors">(verlas aquí)</span>. -->
 
         </div>
+
+        <!-- CAROUSEL -->
+        <div class="container carousel-container">
+
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
+                    <div class="img-frame text-center p-2 rounded" data-toggle="modal" data-target="#modalWatercolors"
+                        (click)="showWatercolor(slide.img)">
+                        <img class="img-fluid rounded" src="{{ slide.img }}" alt="">
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+        <!-- /CAROUSEL -->
     </div>
 </section>
-<!-- CAROUSEL -->
-
-<div class="container"  data-aos="fade-down" data-aos-duration="2000">
-
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" >
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
-            <div class="img-frame text-center p-2 rounded" data-toggle="modal" data-target="#modalWatercolors" (click)="showWatercolor(slide.img)">
-                <img class="img-fluid rounded" src="{{ slide.img }}" alt="">
-            </div>
-        </div>
-    </ngx-slick-carousel>
-</div>
-<!-- /CAROUSEL -->
 <section>
 
     <!-- Modal -->
