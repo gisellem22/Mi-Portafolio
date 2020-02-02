@@ -38,7 +38,9 @@ p {
 .slick-dots li button:before {
     color: #E61A55 !important;
 }
-
+div:focus, a:focus {
+    outline:none !important;
+  }
 @media screen and (min-width:1024px) and (max-width:2000px){
    
     .my-email {

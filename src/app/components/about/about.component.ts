@@ -38,7 +38,7 @@ export class AboutComponent implements OnInit {
 
   slideConfig = {
     "centerMode": true,
-    "centerPadding": '80px',
+    "centerPadding": '100px',
     "slidesToShow": 5, 
     "slidesToScroll": 1,
     "autoplay": true,
