@@ -1,0 +1,9 @@
+a {
+    text-decoration: none;
+}
+.my-email {
+    color: #E61A55;
+}
+.my-email:hover {
+opacity: 0.6;
+}
