@@ -48,7 +48,8 @@ p {
 }
 
 .img-frame {
-    background: #ffdcdb8e;
+    background: #DFD4DD;
+    /* border: 2px solid #333!important; */
     cursor: pointer;
 }
 .img-slide {
