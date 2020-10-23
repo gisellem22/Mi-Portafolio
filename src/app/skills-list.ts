@@ -45,10 +45,10 @@ export let skills: skill[] = [
         name: "BOOTSTRAP",
         text: "Biblioteca multiplataforma, de código abierto para diseño de sitios y aplicaciones web.",
         icon: "devicon-bootstrap-plain"
+    },
+    {
+        name: "SASS",
+        text: "",
+        icon: "devicon-sass-original"
     }
-    // {
-    //     name: "NPM",
-    //     text: "Sistema de gestión de paquetes por defecto para Node.js, con entorno de ejecución para JavaScript.",
-    //     icon: "../../../assets/img/icons/skills/npm.png"
-    // },
 ]

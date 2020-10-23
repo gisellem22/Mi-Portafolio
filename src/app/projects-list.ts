@@ -30,32 +30,31 @@ export let projects: project[] = [
         code: "https://github.com/gisellem22/frontend-recruiting-hsa"
     },
     {
-        name: "POKEMÓN - I CHOOSE YOU",
-        text: "Enciclopedia que agrupa información de los Pokémons de la primera generación, permitiendo al usuario realizar diversos filtros. Para su desarrollo se hizo consumo de una Api Rest de Pokémon, JavaScript y Bootstrap.",
-        img: "../../../assets/img/projects/pokemon.JPG",
-        demo: "https://gisellem22.github.io/SCL009-data-lovers/src/index.html",
-        code: "https://github.com/gisellem22/SCL009-data-lovers"
+        name: "BURGUER QUEEN",
+        text: "Plataforma web SPA diseñada para Tablet, que permite a los meseros de una cadena de restaurantes tomar los pedidos de los clientes. Implementado con Angular y Bootstrap como frameworks Front-End. FireStore como base de datos RealTime para almacenar los pedidos realizados.",
+        img: "../../../assets/img/projects/burger.png",
+        demo: "https://burger-queen-dg.firebaseapp.com",
+        code: "https://github.com/gisellem22/SCL009-Burger-Queen"
     },
-    {
-        name: "WOOD HOTEL-GROUP",
-        text: "Interfaz web que ayuda a un cliente en línea a encontrar el hotel más barato. Implementada con Angular, Firebase RealTime Firestore y Bootstrap.",
-        img: "../../../assets/img/projects/hotel.JPG",
-        demo: "https://desafio-hotel.firebaseapp.com",
-        code: "https://github.com/gisellem22/Deseafio-Hotel"
-    },
+    // {
+    //     name: "WOOD HOTEL-GROUP",
+    //     text: "Interfaz web que ayuda a un cliente en línea a encontrar el hotel más barato. Implementada con Angular, Firebase RealTime Firestore y Bootstrap.",
+    //     img: "../../../assets/img/projects/hotel.JPG",
+    //     demo: "https://desafio-hotel.firebaseapp.com",
+    //     code: "https://github.com/gisellem22/Deseafio-Hotel"
+    // },
     {
         name: "GIGIBOOK",
         text: "Interfaz web que representa la sección de comentarios de una plataforma. Implementada con Angular, Firebase RealTime Firestore y Bootstrap.",
         img: "../../../assets/img/projects/comentarios.JPG",
         demo: "https://desafio-comentarios.firebaseapp.com",
         code: "https://github.com/gisellem22/Desafio-Comentarios"
+    },
+    {
+        name: "POKEMÓN - I CHOOSE YOU",
+        text: "Enciclopedia que agrupa información de los Pokémons de la primera generación, permitiendo al usuario realizar diversos filtros. Para su desarrollo se hizo consumo de una Api Rest de Pokémon, JavaScript y Bootstrap.",
+        img: "../../../assets/img/projects/pokemon.JPG",
+        demo: "https://gisellem22.github.io/SCL009-data-lovers/src/index.html",
+        code: "https://github.com/gisellem22/SCL009-data-lovers"
     }
-    // ,
-    // {
-    //     name: "BURGUER QUEEN",
-    //     text: "Plataforma web SPA diseñada para Tablet, que permite a los meseros de una cadena de restaurantes tomar los pedidos de los clientes. Implementado con Angular y Bootstrap como frameworks Front-End. FireStore como base de datos RealTime para almacenar los pedidos realizados.",
-    //     img: "../../../assets/img/projects/burger-queen.JPG",
-    //     demo: "https://burger-queen-dg.firebaseapp.com",
-    //     code: "https://github.com/gisellem22/SCL009-Burger-Queen"
-    // }
 ]

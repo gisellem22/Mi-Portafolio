@@ -11,11 +11,11 @@ export class SkillsComponent implements OnInit {
 
 skills: skill[];
 
-  constructor(public SkillsService: SkillsService) { }
+  constructor(public skillsService: SkillsService) { }
 
   ngOnInit() {
-this.SkillsService.getSkillsList().subscribe(skills => {
-      this.skills =skills;
+this.skillsService.getSkillsList().subscribe(skills => {
+      this.skills = skills;
     });
   }
 
