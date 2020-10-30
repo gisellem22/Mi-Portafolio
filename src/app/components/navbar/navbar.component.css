@@ -2,9 +2,9 @@
     background-color: #ffffff !important;
     border-bottom: 5px solid #DFD4DD;
   }
-  .navbar-nav {
+  /* .navbar-nav {
    align-self: right;
-  }
+  } */
   .navbar-light .navbar-nav .nav-link:hover {
    background-color: #ffdcdb;
    border-radius: 2px;

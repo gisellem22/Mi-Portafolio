@@ -6,23 +6,18 @@
     
             <div class="col-md-8 order-2 order-md-1">
                 <div class="text-break rounded">
-                    <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000">SOBRE MI</h5>
+                    <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000">{{'ABOUT.title' | translate}}</h5>
     
-                    <p class="mt-1">Soy <a class="link" href="https://www.linkedin.com/in/giselle-machado-gm/"
-                            target="_blank"><i class="fas fa-link"></i>Front-End Developer</a>, brasileña y actualmente vivo
-                        en Santiago de Chile.</p>
-                    <p>Me encantan los desafíos y la lógica, por lo que encontré en la
-                        programación un camino para desarrollar la creativad y el autoaprendizaje. Estoy siempre buscando
-                        aprender nuevas tecnologías y herramientas para crear soluciones y convertir ideas en proyectos
-                        reales.</p>
+                    <p class="mt-1">{{'ABOUT.text1' | translate}}<a class="link" href="https://www.linkedin.com/in/giselle-machado-gm/"
+                            target="_blank"><i class="fas fa-link"></i> Front-End Developer</a>{{'ABOUT.text2' | translate}}</p>
+                    <p>{{'ABOUT.text3' | translate}}</p>
     
                     <a class="link" href="https://drive.google.com/open?id=1hmxT6vTEP93Vxfn6FAXiB6mmqy9wI4Ut" target="_blank">
                         <!-- <p> Puedes ver mi CV aquí <i class="material-icons align-bottom">cloud_download</i></p> -->
-                        <p> Puedes ver mi CV aquí <img src="../../../assets/img/icons/icon-cv.png" style="height: 100px; width: 90px;" alt=""></p>
+                        <p>{{'ABOUT.cv' | translate}}<img src="../../../assets/img/icons/icon-cv.png" style="height: 100px; width: 90px;" alt=""></p>
                     </a>
-                    <p>Hablo portugués, inglés y español con fluidez. Amo leer libros de aventuras y en mis tiempos libres
-                        me gusta pintar <a class="link" href="https://www.instagram.com/acuarelasdegi/"
-                            target="_blank">Acuarelas</a>.</p>
+                    <p>{{'ABOUT.text4' | translate}} <a class="link" href="https://www.instagram.com/acuarelasdegi/"
+                            target="_blank">{{'ABOUT.text5' | translate}}</a>.</p>
                 </div>
     
     
@@ -35,14 +30,35 @@
                     <img src="../../../assets/img//profile-gm.jpg" class="img-fluid rounded" alt="Foto de Perfil">
                 </div>
             </div>
-            <div class="order-3">
+            <div class="order-3 w-100">
                 <app-skills></app-skills>
+            </div>
+
+            <div class="container carousel-container order-4 mb-5">
+                <h5 class="my-5">{{'ABOUT.ilustrations' | translate}}</h5>
+                <div class="row">
+                    <div class="col">
+                        <img src="../../../assets/img/ilustrations/fabi.png" alt="" class="img-fluid" height="220px">
+                    </div>
+                    <div class="col">
+                        <img src="../../../assets/img/ilustrations/caro.png" alt="" class="img-fluid" height="220px">
+                    </div>
+                    <div class="col">
+                        <img src="../../../assets/img/ilustrations/bibi.png" alt="" class="img-fluid" height="220px">
+                    </div>
+                    <div class="col">
+                        <img src="../../../assets/img/ilustrations/dedeia.png" alt="" class="img-fluid" height="220px">
+                    </div>
+                    <div class="col">
+                        <img src="../../../assets/img/ilustrations/wesley.png" alt="" class="img-fluid" height="220px">
+                    </div>
+                </div>
             </div>
     
             <!-- CAROUSEL -->
-            <div class="container carousel-container order-4">
-                <h5 class="my-5">ACUARELAS</h5>
-                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+            <div class="container carousel-container order-4 mb-5">
+                <h5 class="my-5">{{'ABOUT.watercolors' | translate}}</h5>
+                <ngx-slick-carousel class="carousel mb-5" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
                         <div class="img-frame text-center p-2 rounded" data-toggle="modal" data-target="#modalWatercolors"
                             (click)="showWatercolor(slide.img)">

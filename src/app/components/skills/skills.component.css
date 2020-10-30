@@ -19,3 +19,8 @@
 	padding: 30px; 
 	margin: 0;
   }
+
+  .icon-skills:hover {
+	background-color: #ffdcdb;
+	border-radius: 4px;
+  }
