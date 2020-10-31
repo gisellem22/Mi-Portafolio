@@ -2,7 +2,7 @@
     <app-navbar></app-navbar>
 </div>
 <section class="container h-100 top-standard">
-        <div class="row" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
     
             <div class="col-md-8 order-2 order-md-1">
                 <div class="text-break rounded">
@@ -24,33 +24,35 @@
                 <!--<span class="highlight" data-toggle="modal" data-target="#modalWatercolors">(verlas aquí)</span>. -->
     
             </div>
-    
             <div class="col-md-4 mb-3 order-1 order-md-2">
                 <div class="img-frame text-center p-2 rounded">
                     <img src="../../../assets/img//profile-gm.jpg" class="img-fluid rounded" alt="Foto de Perfil">
                 </div>
             </div>
-            <div class="order-3 w-100">
-                <app-skills></app-skills>
+            
+            <div class="container order-4" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                <div class="w-100">
+                    <app-skills></app-skills>
+                </div>
             </div>
-
+            
             <div class="container carousel-container order-4 mb-5">
                 <h5 class="my-5">{{'ABOUT.ilustrations' | translate}}</h5>
                 <div class="row">
-                    <div class="col">
-                        <img src="../../../assets/img/ilustrations/fabi.png" alt="" class="img-fluid" height="220px">
+                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="../../../assets/img/ilustrations/fabi.png" alt="" class="img-fluid ilustration" height="220px">
                     </div>
-                    <div class="col">
-                        <img src="../../../assets/img/ilustrations/caro.png" alt="" class="img-fluid" height="220px">
+                    <div class="col" data-aos="fade-down" data-aos-duration="1500">
+                        <img src="../../../assets/img/ilustrations/caro.png" alt="" class="img-fluid ilustration" height="220px">
                     </div>
-                    <div class="col">
-                        <img src="../../../assets/img/ilustrations/bibi.png" alt="" class="img-fluid" height="220px">
+                    <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="../../../assets/img/ilustrations/bibi.png" alt="" class="img-fluid ilustration" height="220px">
                     </div>
-                    <div class="col">
-                        <img src="../../../assets/img/ilustrations/dedeia.png" alt="" class="img-fluid" height="220px">
+                    <div class="col" data-aos="fade-down" data-aos-duration="2500">
+                        <img src="../../../assets/img/ilustrations/dedeia.png" alt="" class="img-fluid ilustration" height="220px">
                     </div>
-                    <div class="col">
-                        <img src="../../../assets/img/ilustrations/wesley.png" alt="" class="img-fluid" height="220px">
+                    <div class="col" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="../../../assets/img/ilustrations/wesley.png" alt="" class="img-fluid ilustration" height="220px">
                     </div>
                 </div>
             </div>
