@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="mt-2">
-    <img src="../../../assets/img/logogi2.png" style="max-height: 50px; max-width: 230px" class="img-fluid"
+    <img src="../../../assets/img/logogi2.png"  class="main-logo"
       alt="EN CONSTRUCCIÓN" routerLink="/home" routerLinkActive="active">
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -9,23 +9,18 @@
   </button>
   <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item mr-5 text-center" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active">
-        <a class="nav-link" routerLink="/projects">
-          <img src="../../../assets/img/icons/project-gii.png" style="height: 60px;" alt="">
-          <p class="mb-0">{{'NAVBAR.project' | translate}}</p>
-        </a>
-       
-      </li>
       <li class="nav-item active mr-5 text-center" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active">
         <a class="nav-link" routerLink="/about">
           <img src="../../../assets/img/icons/gigi-dev.png" style="height: 60px;" alt="">
           <p class="mb-0">{{'NAVBAR.about' | translate}}</p>
         </a>
-        
       </li>
-      <!-- <li class="nav-item mr-3" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" routerLink="/skills" routerLinkActive="active">HABILIDADES</a>
-      </li> -->
+      <li class="nav-item mr-5 text-center" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active">
+        <a class="nav-link" routerLink="/projects">
+          <img src="../../../assets/img/icons/project-gii.png" style="height: 60px;" alt="">
+          <p class="mb-0">{{'NAVBAR.project' | translate}}</p>
+        </a>
+      </li>
       <li class="nav-item mr-5 text-center" data-toggle="collapse" data-target=".navbar-collapse.show" routerLinkActive="active">
         <a class="nav-link" routerLink="/contact">
           <img src="../../../assets/img/icons/contact-gi.png" style="height: 60px;" alt="">

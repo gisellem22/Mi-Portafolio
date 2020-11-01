@@ -12,6 +12,10 @@ body {
     font-size: 16px;
     word-spacing: 2px;
 }
+.main-logo {
+    max-height: 100px;
+    max-width: 350px;
+}
 
 .top-standard{
     padding-top: 160px;
@@ -49,6 +53,9 @@ p {
 div:focus, a:focus {
     outline:none !important;
   }
+
+
+
 @media screen and (min-width:1024px) and (max-width:2000px){
    
     .my-email {
@@ -61,6 +68,10 @@ div:focus, a:focus {
     }
 }
 @media screen and (min-width:995px) and (max-width:1024px){
+    .main-logo {
+        max-height: 50px;
+        max-width: 230px;
+    }
     
     .my-email {
         font-size: 25px;
@@ -72,6 +83,10 @@ div:focus, a:focus {
     }
 }
 @media screen and (min-width:321px) and (max-width:995px){
+    .main-logo {
+        max-height: 50px;
+        max-width: 230px;
+    }
     
     .my-email {
         font-size: 18px;
@@ -102,6 +117,10 @@ div:focus, a:focus {
         }
 }
 @media screen and (max-width:320px){
+    .main-logo {
+        max-height: 50px;
+        max-width: 230px;
+    }
     .my-email {
         font-size: 16px;
         font-weight: bold;
@@ -129,6 +148,10 @@ div:focus, a:focus {
     }
 }
 @media screen and (max-width:280px){
+    .main-logo {
+        max-height: 50px;
+        max-width: 230px;
+    }
     .top-resp {
         padding-top: 240px;
     }

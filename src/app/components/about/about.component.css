@@ -28,13 +28,13 @@ p {
     color: #E61A55;
 }
 .modal-header {
-    border-bottom: 5px solid #ffdcdb;
+    border-bottom: 5px solid #f9f9f9;
 }
 .modal-footer {
-    border-top: 5px solid #ffdcdb;
+    border-top: 5px solid #f9f9f9;
 }
 .modal-content {
-    background-color: #ffdcdb;
+    background-color: #f9f9f9;
     border: none;
 }
 .modal-title {
@@ -43,7 +43,7 @@ p {
     letter-spacing: 5px;
 }
 .close {
-    color: #ffffff;
+    color: #E61A55;
     opacity: 1;
 }
 
