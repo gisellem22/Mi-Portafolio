@@ -1,12 +1,13 @@
 <div class="nav-container">
     <app-navbar></app-navbar>
 </div>
-<section class="container h-100 top-standard">
+<section class="h-100 top-standard">
+    <div class="container">
         <div class="row" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
     
             <div class="col-md-8 order-2 order-md-1">
                 <div class="text-break rounded">
-                    <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000">{{'ABOUT.title' | translate}}</h5>
+                    <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.title' | translate}}</h5>
     
                     <p class="mt-1">{{'ABOUT.text1' | translate}}<a class="link" href="https://www.linkedin.com/in/giselle-machado-gm/"
                             target="_blank"><i class="fas fa-link"></i> Front-End Developer</a>{{'ABOUT.text2' | translate}}</p>
@@ -37,7 +38,7 @@
             </div>
             
             <div class="container carousel-container order-4 mb-5">
-                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000">{{'ABOUT.ilustrations' | translate}}</h5>
+                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.ilustrations' | translate}}</h5>
                 <div class="row">
                     <div class="col-sm-12 col-md mb-3" data-aos="fade-up" data-aos-duration="1000">
                         <img src="../../../assets/img/ilustrations/fabi.png" alt="" class="img-fluid ilustration" height="220px">
@@ -58,8 +59,8 @@
             </div>
     
             <!-- CAROUSEL -->
-            <div class="container carousel-container order-4 mb-5" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
-                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000">{{'ABOUT.watercolors' | translate}}</h5>
+            <div class="container carousel-container order-4" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.watercolors' | translate}}</h5>
                 <ngx-slick-carousel class="carousel mb-5" #slickModal="slick-carousel" [config]="slideConfig">
                     <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
                         <div class="img-frame text-center p-2 rounded"
@@ -72,6 +73,8 @@
             </div>
             <!-- /CAROUSEL -->
         </div>
+    </div>
+        <app-footer></app-footer>
 </section>
 
     <!-- Modal -->

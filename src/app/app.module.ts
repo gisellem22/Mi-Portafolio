@@ -22,6 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactComponent,
     PageNotFoundComponent,
     SkillsComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
