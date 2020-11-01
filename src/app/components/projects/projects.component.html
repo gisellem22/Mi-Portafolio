@@ -1,35 +1,30 @@
 <div class="nav-container">
     <app-navbar></app-navbar>
 </div>
-<div class="container" data-aos="fade-down" data-aos-duration="2000" style="padding-top: 150px;">
-        <div class="row justify-content-center">
-            <div class="card col-12 col-sm-6 col-md-6 col-lg-6 border-0 mb-5" *ngFor="let project of projects">   
-                <div class="text-center p-2 rounded" style="background: #f9f9f9">    
-                   <a [href]="project.npm" target="_blank" *ngIf="project.npm"><img [src]="project.img" class="card-img-top img-fluid rounded" [alt]="project.name"></a> 
-                   <a [href]="project.demo" target="_blank" *ngIf="project.demo"><img [src]="project.img" class="card-img-top img-fluid rounded" [alt]="project.name"></a> 
-                   <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="row justify-content-end mt-2 pr-0">
-                                <div *ngIf="project.demo">
-                                    <a class="links p-3 " [href]="project.demo" target="_blank">DEMO</a>
-                            </div>
-                            <div *ngIf="project.npm">
-                                    <a class="links p-3 " [href]="project.npm" target="_blank">NPM</a>
-                            </div>
-                             <div>
-                                     <a class="links p-3" [href]="project.code" target="_blank">CÓDIGO</a>
-                             </div>   
-                         </div>
-                         </div>   
-                </div> 
-                    <div class="card-body mb-3">
-                        <div class="row pr-0">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <h5 class="card-title border-bottom">{{project.name}}</h5>
-
-                                </div>
+<div class="container h-100 top-standard" data-aos="fade-down" data-aos-duration="2000">
+    <ul class="grid cs-style-1 m-0 p-0">
+		<li *ngFor="let project of projects"  class="rounded mx-0 my-3 mx-md-3 h-100" style="background: #f9f9f9">
+            <h5 class=" ">{{project.name}}</h5>
+            <figure>
+				<img [src]="project.img" class="card-img-top img-fluid rounded" [alt]="project.name">
+				<figcaption class="row" [ngStyle]="{'background-color': project.bgColor}">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12 px-1 pt-2 pt-md-0 px-md-3">                    
+                            <p class="mb-1 mb-md-3">{{project.text}}</p>
                         </div>
-                        <p   class="card-text">{{project.text}}</p>
+                        <div class="col-3 px-1 px-md-3">
+                            <img src="../../../assets/img/icons/tools.png" alt="" style="height: 40px;">
+                        </div>
+                        <div class="col-9 px-1 px-md-3">
+                            <p class="mb-1 mb-md-3">{{project.tools}}</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="mt-2 pr-0 w-100 d-flex justify-content-end">
+                            <a class="links p-2 " [href]="project.npm? project.npm: project.demo" target="_blank">{{project.npm? 'NPM': 'DEMO'}}</a>
+                            <a class="links p-2 ml-2" [href]="project.code" target="_blank">CÓDIGO</a>
+                    </div>
+                </figcaption>
+            </figure>
+		</li>
+	</ul>
+</div>
