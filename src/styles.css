@@ -151,7 +151,7 @@ div:focus, a:focus {
     }
 }
 
-@media screen and (min-height:1300px){
+@media screen and (min-height:1000px) and (max-width:1024px){
     .responsive-super-height-none {
         display: none;
     }
