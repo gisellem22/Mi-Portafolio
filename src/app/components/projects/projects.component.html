@@ -6,11 +6,11 @@
         <ul class="grid cs-style-1 m-0 p-0">
             <li *ngFor="let project of projects"  class="rounded mx-0 my-3 mx-md-3 h-100" style="background: #f9f9f9">
                 <h5 class="border-bottom">{{project.name}}</h5>
-                <figure>
+                <figure class="">
                     <img [src]="project.img" class="card-img-top img-fluid rounded" [alt]="project.name">
                     <figcaption class="row" [ngStyle]="{'background-color': project.bgColor}">
                         <div class="row px-0 mx-0">
-                            <div class="col-12 px-1 pt-2 pt-md-0 px-md-3">                    
+                            <div class="col-12 px-1 pt-2 pt-md-3 px-md-3">                    
                                 <p class="mb-1 mb-md-3">{{project.text}}</p>
                             </div>
                             <div class="col-3 px-1 px-md-3">

@@ -33,7 +33,7 @@ export let projects: project[] = [
         demo: 'https://concrete-challenge.web.app/home',
         code: 'https://github.com/gisellem22/frontend-recruiting-hsa',
         bgColor: '#AC53F2',
-        tools: 'Angular, Firebase, CSS, API Rest.'
+        tools: 'Angular, Firebase, CSS3, Integración API Rest.'
     },
     {
         name: 'BURGUER QUEEN',
