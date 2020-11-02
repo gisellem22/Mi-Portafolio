@@ -59,7 +59,12 @@ div:focus, a:focus {
     outline:none !important;
   }
 
-
+  .responsive-super-height-none {
+    display: block;
+}
+.responsive-super-height-block {
+    display: none;
+}
 
 @media screen and (min-width:1024px) and (max-width:2000px){
    
@@ -143,6 +148,15 @@ div:focus, a:focus {
     }
     .top-resp {
         padding-top: 240px;
+    }
+}
+
+@media screen and (min-height:1300px){
+    .responsive-super-height-none {
+        display: none;
+    }
+    .responsive-super-height-block {
+        display: block;
     }
 }
 html, body { height: 100%; }
