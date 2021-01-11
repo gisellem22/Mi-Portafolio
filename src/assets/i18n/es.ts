@@ -18,9 +18,9 @@ export const ES = {
     ABOUT: {
         title: 'SOBRE MI',
         text1: 'Soy',
-        text2: ', brasileña y actualmente vivo en Santiago de Chile.',
-        text3: 'Me encantan los desafíos y la lógica, por lo que encontré en la programación un camino para desarrollar la creativad y el autoaprendizaje. Estoy siempre buscando aprender nuevas tecnologías y herramientas para crear soluciones y convertir ideas en proyectos reales.',
-        text4: 'Hablo portugués, inglés y español con fluidez. Amo leer libros de aventuras y en mis tiempos libres me gusta pintar',
+        text2: ', brasileña y vivo en Santiago de Chile.',
+        text3: 'Actualmente trabajo en el desarrollo de una plataforma de compraventa internacional de mercancías de una de las mayores empresas de retail de Latinoamérica.',
+        text4: 'Tengo pasión por las artes y creo que esa mirada artística hace toda la diferencia en mi trabajo como Front-End. Me aventuro en la',
         text5: 'Acuarelas',
         cv: 'Puedes ver mi CV aquí',
         ilustrations: 'ILUSTRACIONES',
