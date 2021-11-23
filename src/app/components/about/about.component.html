@@ -1,126 +1,285 @@
 <div class="nav-container">
-    <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </div>
-<section class="h-100 top-standard">
-    <div class="container">
-        <div class="row" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
-    
-            <div class="col-md-8 order-2 order-md-1">
-                <div class="text-break rounded">
-                    <h5 class="pb-2" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.title' | translate}}</h5>
-    
-                    <p class="mt-1">{{'ABOUT.text1' | translate}}<a class="highlight" href="https://www.linkedin.com/in/giselle-machado-gm/"
-                            target="_blank"> Front-End Developer</a>{{'ABOUT.text2' | translate}}</p>
-                    <p>{{'ABOUT.text3' | translate}}</p>
-                    <p>Especializada en el desarrollo Front-End y UI, estoy siempre buscando agregar valor y entregar la mejor interfaz funcional al usuario, sea en la implementación de nuevas ideas y funcionalidades o en el mejoramiento de productos ya creados.</p>
-                    <p>Soy una profesional creativa y muy detallista. Me encantan los nuevos desafíos, frente a ellos soy curiosa y determinada. Tengo gran capacidad de análisis y solución de problemas.</p>
-                    <p>Experiencia con HTML 5, CSS 3, Bootstrap, Material-UI, Sass, Javascript ES6, TypeScript, Angular 8+, NodeJS, Integración de servicios REST, Microfrontend, Firebase, Diseño Responsivo, UX Research, Wireframing y prototipado UI, Metodologías Ágiles.</p>
-                    <p>Hablo portugués, inglés y español con fluidez.</p>
-                    <p>{{'ABOUT.text4' | translate}}
-                        <a class="highlight" href="https://www.instagram.com/gi.ilustra/"
-                            target="_blank"> Ilustración Digital</a> (todo los iconos de esta plataforma web fueron diseñados por mí :D)
-                            y amo pintar
-                        <a class="highlight" href="https://www.instagram.com/acuarelasdegi/"
-                            target="_blank">Acuarelas
-                        </a>.
-                        </p>
-                </div>
-    
-    
-                <!--<span class="highlight" data-toggle="modal" data-target="#modalWatercolors">(verlas aquí)</span>. -->
-    
-            </div>
-            <div class="col-md-4 mb-3 order-1 order-md-2">
-                <div class="img-frame text-center p-2 rounded">
-                    <img src="../../../assets/img//profile-gm.jpg" class="img-fluid rounded" alt="Foto de Perfil">
-                </div>
-                <div style="margin-top: -10px;" class="ml-5">
-                    <a class="link"  href="https://drive.google.com/file/d/1d3DvB1O_rGXvI7AHvVTRvHuLZuVKnqm1/view?usp=sharing" target="_blank">
-                        <p>{{'ABOUT.cv' | translate}}<img src="../../../assets/img/icons/icon-cv.png" style="height: 70px; width: 70px;" alt=""></p>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="container order-4" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
-                <div class="w-100">
-                    <app-skills></app-skills>
-                </div>
-            </div>
-            
-            <div class="container carousel-container order-4 mb-5">
-                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.ilustrations' | translate}}</h5>
-                <div class="row">
-                    <div class="col-sm-12 col-md mb-3" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="../../../assets/img/ilustrations/fabi.png" alt="" class="img-fluid ilustration" height="220px"
-                        data-toggle="modal" data-target="#modalWatercolors" 
-                        (click)="showWatercolor('../../../assets/img/ilustrations/fabi.png')">
-                    </div>
-                    <div class="col-sm-12 col-md mb-3" data-aos="fade-down" data-aos-duration="1500">
-                        <img src="../../../assets/img/ilustrations/caro.png" alt="" class="img-fluid ilustration" height="220px"
-                        data-toggle="modal" data-target="#modalWatercolors" 
-                        (click)="showWatercolor('../../../assets/img/ilustrations/caro.png')">
-                    </div>
-                    <div class="col-sm-12 col-md mb-3" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="../../../assets/img/ilustrations/bibi.png" alt="" class="img-fluid ilustration" height="220px"
-                        data-toggle="modal" data-target="#modalWatercolors" 
-                        (click)="showWatercolor('../../../assets/img/ilustrations/bibi.png')">
-                    </div>
-                    <div class="col-sm-12 col-md mb-3" data-aos="fade-down" data-aos-duration="2500">
-                        <img src="../../../assets/img/ilustrations/dedeia.png" alt="" class="img-fluid ilustration" height="220px"
-                        data-toggle="modal" data-target="#modalWatercolors" 
-                        (click)="showWatercolor('../../../assets/img/ilustrations/dedeia.png')">
-                    </div>
-                    <div class="col-sm-12 col-md mb-3" data-aos="fade-up" data-aos-duration="3000">
-                        <img src="../../../assets/img/ilustrations/wesley.png" alt="" class="img-fluid ilustration" height="220px"
-                        data-toggle="modal" data-target="#modalWatercolors" 
-                        (click)="showWatercolor('../../../assets/img/ilustrations/wesley.png')">
-                    </div>
-                </div>
-            </div>
-    
-            <!-- CAROUSEL -->
-            <div class="container carousel-container order-4" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
-                <h5 class="my-5" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">{{'ABOUT.watercolors' | translate}}</h5>
-                <ngx-slick-carousel class="carousel mb-5" #slickModal="slick-carousel" [config]="slideConfig">
-                    <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
-                        <div class="img-frame text-center p-2 rounded"
-                        data-toggle="modal" data-target="#modalWatercolors"
-                        (click)="showWatercolor(slide.img)">
-                            <img class="img-fluid rounded" src="{{ slide.img }}" alt="">
-                        </div>
-                    </div>
-                </ngx-slick-carousel>
-            </div>
-            <!-- /CAROUSEL -->
+<section class="h-100 top-standard pt-md-5">
+  <div class="container">
+    <div
+      class="row"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
+      <div class="col-md-8 order-2 order-md-1">
+        <div class="text-break rounded">
+          <h5
+            class="pb-2"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            {{ "ABOUT.title" | translate }}
+          </h5>
+
+          <p class="mt-1">
+            {{ "ABOUT.text1" | translate
+            }}<a
+              class="highlight"
+              href="https://www.linkedin.com/in/giselle-machado-gm/"
+              target="_blank"
+            >
+              Front-End Developer</a
+            >{{ "ABOUT.text2" | translate }}
+          </p>
+          <p>{{ "ABOUT.text3" | translate }}</p>
+          <p>
+            Especializada en el desarrollo Front-End y UI, estoy siempre
+            buscando agregar valor y entregar la mejor interfaz funcional al
+            usuario, sea en la implementación de nuevas ideas y funcionalidades
+            o en el mejoramiento de productos ya creados.
+          </p>
+          <p>
+            Soy una profesional creativa y muy detallista. Me encantan los
+            nuevos desafíos, frente a ellos soy curiosa y determinada. Tengo
+            gran capacidad de análisis y solución de problemas.
+          </p>
+          <p>
+            Experiencia con HTML 5, CSS 3, Bootstrap, Vuetify, Material-UI,
+            Sass, Javascript ES6, TypeScript, Angular 8+, Vue.JS, Nuxt.JS,
+            Node.JS, Docker, Integración de servicios REST, Microfrontend,
+            Firebase, Git, Github, Gitlab, Diseño Responsivo, UX Research,
+            Wireframing y prototipado UI, Metodologías Ágiles.
+          </p>
+          <p>Hablo portugués, inglés y español con fluidez.</p>
+          <p>
+            {{ "ABOUT.text4" | translate }}
+            <a
+              class="highlight"
+              href="https://www.instagram.com/gi.ilustra/"
+              target="_blank"
+            >
+              Ilustración Digital</a
+            >
+            (todo los iconos de esta plataforma web fueron diseñados por mí :D)
+            y amo pintar
+            <a
+              class="highlight"
+              href="https://www.instagram.com/acuarelasdegi/"
+              target="_blank"
+              >Acuarelas </a
+            >.
+          </p>
         </div>
+
+        <!--<span class="highlight" data-toggle="modal" data-target="#modalWatercolors">(verlas aquí)</span>. -->
+      </div>
+      <div class="col-md-4 mb-3 order-1 order-md-2">
+        <div class="img-frame text-center p-2 rounded">
+          <img
+            src="../../../assets/img//profile-gm.jpg"
+            class="img-fluid rounded"
+            alt="Foto de Perfil"
+          />
+        </div>
+        <div style="margin-top: -10px" class="ml-5">
+          <a
+            class="link"
+            href="https://drive.google.com/file/d/1d3DvB1O_rGXvI7AHvVTRvHuLZuVKnqm1/view?usp=sharing"
+            target="_blank"
+          >
+            <p>
+              {{ "ABOUT.cv" | translate
+              }}<img
+                src="../../../assets/img/icons/icon-cv.png"
+                style="height: 70px; width: 70px"
+                alt=""
+              />
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="container order-4"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
+        <div class="w-100">
+          <app-skills></app-skills>
+        </div>
+      </div>
+
+      <div class="container carousel-container order-4 mb-5">
+        <h5
+          class="my-5"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
+          {{ "ABOUT.ilustrations" | translate }}
+        </h5>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md mb-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="../../../assets/img/ilustrations/fabi.png"
+              alt=""
+              class="img-fluid ilustration"
+              height="220px"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="
+                showWatercolor('../../../assets/img/ilustrations/fabi.png')
+              "
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md mb-3"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            <img
+              src="../../../assets/img/ilustrations/caro.png"
+              alt=""
+              class="img-fluid ilustration"
+              height="220px"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="
+                showWatercolor('../../../assets/img/ilustrations/caro.png')
+              "
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md mb-3"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img
+              src="../../../assets/img/ilustrations/bibi.png"
+              alt=""
+              class="img-fluid ilustration"
+              height="220px"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="
+                showWatercolor('../../../assets/img/ilustrations/bibi.png')
+              "
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md mb-3"
+            data-aos="fade-down"
+            data-aos-duration="2500"
+          >
+            <img
+              src="../../../assets/img/ilustrations/dedeia.png"
+              alt=""
+              class="img-fluid ilustration"
+              height="220px"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="
+                showWatercolor('../../../assets/img/ilustrations/dedeia.png')
+              "
+            />
+          </div>
+          <div
+            class="col-sm-12 col-md mb-3"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <img
+              src="../../../assets/img/ilustrations/wesley.png"
+              alt=""
+              class="img-fluid ilustration"
+              height="220px"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="
+                showWatercolor('../../../assets/img/ilustrations/wesley.png')
+              "
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div
+        class="container carousel-container order-4"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
+        <h5
+          class="my-5"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
+          {{ "ABOUT.watercolors" | translate }}
+        </h5>
+        <ngx-slick-carousel
+          class="carousel mb-5"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+        >
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
+            <div
+              class="img-frame text-center p-2 rounded"
+              data-toggle="modal"
+              data-target="#modalWatercolors"
+              (click)="showWatercolor(slide.img)"
+            >
+              <img class="img-fluid rounded" src="{{ slide.img }}" alt="" />
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+      <!-- /CAROUSEL -->
     </div>
-        <app-footer></app-footer>
+  </div>
+  <app-footer></app-footer>
 </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalWatercolors" tabindex="-1" role="dialog" aria-labelledby="modalWatercolorsTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered-scrollable" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="float-right pr-2" aria-hidden="true">&times;</span>
-                </button>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="modalWatercolors"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modalWatercolorsTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered-scrollable" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span class="float-right pr-2" aria-hidden="true">&times;</span>
+      </button>
 
-                <!-- <div class="modal-header">
+      <!-- <div class="modal-header">
                     <h6 class="modal-title" id="modalWatercolorsTitle">MIS ACUARELAS</h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     </button>
                 </div> -->
-                <div class="modal-body py-0">
-                    <div class="mb-3 text-center">
-                        <img [src]="watercolorModal" class="img-modal rounded" [alt]="">
-                    </div>
-                </div>
-                <!-- <div class="modal-footer">
+      <div class="modal-body py-0">
+        <div class="mb-3 text-center">
+          <img [src]="watercolorModal" class="img-modal rounded" [alt]="" />
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-light" style="font-weight: bold; color: #EE7BA7"
                         data-dismiss="modal">CERRAR</button>
                 </div> -->
-            </div>
-        </div>
     </div>
-    <!-- /Modal -->
+  </div>
+</div>
+<!-- /Modal -->
