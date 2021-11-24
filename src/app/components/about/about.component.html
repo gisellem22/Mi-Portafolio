@@ -109,137 +109,216 @@
         </div>
       </div>
 
-      <div class="container carousel-container order-4 mb-5">
-        <h5
-          class="my-5"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-once="true"
-        >
-          {{ "ABOUT.ilustrations" | translate }}
-        </h5>
+      <div class="container order-4 mb-5">
         <div class="row">
-          <div
-            class="col-sm-12 col-md mb-3"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <img
-              src="../../../assets/img/ilustrations/fabi.png"
-              alt=""
-              class="img-fluid ilustration"
-              height="220px"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="
-                showWatercolor('../../../assets/img/ilustrations/fabi.png')
-              "
-            />
+          <div class="col-md-7">
+            <h5
+              class="my-5"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              {{ "ABOUT.ilustrations" | translate }}
+            </h5>
+            <div class="row">
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/fabi.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor('../../../assets/img/ilustrations/fabi.png')
+                  "
+                />
+              </div>
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/caro.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor('../../../assets/img/ilustrations/caro.png')
+                  "
+                />
+              </div>
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/bibi.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor('../../../assets/img/ilustrations/bibi.png')
+                  "
+                />
+              </div>
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-down"
+                data-aos-duration="2500"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/dedeia.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor(
+                      '../../../assets/img/ilustrations/dedeia.png'
+                    )
+                  "
+                />
+              </div>
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/wesley.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor(
+                      '../../../assets/img/ilustrations/wesley.png'
+                    )
+                  "
+                />
+              </div>
+              <div
+                class="col-md-4 mb-3"
+                data-aos="fade-down"
+                data-aos-duration="2500"
+              >
+                <img
+                  src="../../../assets/img/ilustrations/andres.png"
+                  alt=""
+                  class="img-fluid ilustration"
+                  height="220px"
+                  data-toggle="modal"
+                  data-target="#modalWatercolors"
+                  (click)="
+                    showWatercolor(
+                      '../../../assets/img/ilustrations/andres.png'
+                    )
+                  "
+                />
+              </div>
+            </div>
           </div>
+          <div class="col-md-5">
+            <h5
+              class="my-5 text-md-right"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              {{ "ABOUT.watercolors" | translate }}
+            </h5>
+
+            <!-- CAROUSEL -->
+            <div
+              class="container px-0 order-4 slide-resp"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+              data-aos-once="true"
+            >
+              <div
+                style="width: 380px"
+                id="carouselExampleControls"
+                class="carousel slide bg-slider p-3"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div
+                    class="carousel-item"
+                    *ngFor="
+                      let slide of slides;
+                      let i = index;
+                      first as isFirst
+                    "
+                    [ngClass]="isFirst ? 'active' : ''"
+                  >
+                    <img
+                      style="height: 100%"
+                      class="d-block w-100"
+                      src="{{ slide.img }}"
+                      alt="First slide"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <!-- <ngx-slick-carousel
+        class="carousel mb-5"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
           <div
-            class="col-sm-12 col-md mb-3"
-            data-aos="fade-down"
-            data-aos-duration="1500"
+            class="img-frame text-center p-2 rounded"
+            data-toggle="modal"
+            data-target="#modalWatercolors"
+            (click)="showWatercolor(slide.img)"
           >
-            <img
-              src="../../../assets/img/ilustrations/caro.png"
-              alt=""
-              class="img-fluid ilustration"
-              height="220px"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="
-                showWatercolor('../../../assets/img/ilustrations/caro.png')
-              "
-            />
+            <img class="img-fluid rounded" src="{{ slide.img }}" alt="" />
           </div>
-          <div
-            class="col-sm-12 col-md mb-3"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <img
-              src="../../../assets/img/ilustrations/bibi.png"
-              alt=""
-              class="img-fluid ilustration"
-              height="220px"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="
-                showWatercolor('../../../assets/img/ilustrations/bibi.png')
-              "
-            />
-          </div>
-          <div
-            class="col-sm-12 col-md mb-3"
-            data-aos="fade-down"
-            data-aos-duration="2500"
-          >
-            <img
-              src="../../../assets/img/ilustrations/dedeia.png"
-              alt=""
-              class="img-fluid ilustration"
-              height="220px"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="
-                showWatercolor('../../../assets/img/ilustrations/dedeia.png')
-              "
-            />
-          </div>
-          <div
-            class="col-sm-12 col-md mb-3"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-          >
-            <img
-              src="../../../assets/img/ilustrations/wesley.png"
-              alt=""
-              class="img-fluid ilustration"
-              height="220px"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="
-                showWatercolor('../../../assets/img/ilustrations/wesley.png')
-              "
-            />
+        </div>
+      </ngx-slick-carousel> -->
+            </div>
+            <!-- /CAROUSEL -->
           </div>
         </div>
       </div>
-
-      <!-- CAROUSEL -->
-      <div
-        class="container carousel-container order-4"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-once="true"
-      >
-        <h5
-          class="my-5"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-once="true"
-        >
-          {{ "ABOUT.watercolors" | translate }}
-        </h5>
-        <ngx-slick-carousel
-          class="carousel mb-5"
-          #slickModal="slick-carousel"
-          [config]="slideConfig"
-        >
-          <div ngxSlickItem *ngFor="let slide of slides" class="slide m-2">
-            <div
-              class="img-frame text-center p-2 rounded"
-              data-toggle="modal"
-              data-target="#modalWatercolors"
-              (click)="showWatercolor(slide.img)"
-            >
-              <img class="img-fluid rounded" src="{{ slide.img }}" alt="" />
-            </div>
-          </div>
-        </ngx-slick-carousel>
-      </div>
-      <!-- /CAROUSEL -->
     </div>
   </div>
   <app-footer></app-footer>
