@@ -9,10 +9,10 @@ import { project } from 'src/app/models/project';
 })
 export class ProjectsComponent implements OnInit {
 projects: project[];
-  constructor(public SkillsService: SkillsService) { }
+  constructor(public skillsService: SkillsService) { }
 
   ngOnInit() {
-    this.SkillsService.getProjectsList().subscribe(projects => {
+    this.skillsService.getProjectsList().subscribe(projects => {
       this.projects =projects;
     });
   }

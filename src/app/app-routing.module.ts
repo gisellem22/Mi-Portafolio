@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   imports: [    
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false, scrollPositionRestoration: 'enabled' }
+      { enableTracing: false, scrollPositionRestoration: 'enabled', relativeLinkResolution: 'legacy' }
     )
   ],
   exports: [RouterModule]

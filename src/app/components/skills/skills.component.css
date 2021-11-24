@@ -1,21 +1,27 @@
- img {
-    padding: 10px;
-	display:block;
-	margin:auto;
-	width: 90px;
-	height:90px;
+img {
+  padding: 10px;
+  display: block;
+  margin: auto;
+  width: 90px;
+  height: 90px;
 }
-.card-title, .card-text {
-    text-align: center;
+.card-title,
+.card-text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif !important;
 }
 
-.icons{
-	text-align:center;
-  
-  }
-  .icons i{
-	color: #E61A55;
-	font-size:60px;
-	padding: 30px; 
-	margin: 0;
-  }
+.icons {
+  text-align: center;
+}
+.icons i {
+  color: #e61a55;
+  font-size: 60px;
+  padding: 30px;
+  margin: 0;
+}
+
+.icon-skills:hover {
+  background-color: #ffdcdb;
+  border-radius: 4px;
+}

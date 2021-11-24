@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, from } from 'rxjs';
 import { skill } from '../models/skill';
-import { skills } from '../skills-list'
+import { skills } from '../skills-list';
+import { skills2 } from '../skills-list-2';
 import { project } from '../models/project';
 import { projects } from '../projects-list';
 import { watercolors } from '../watercolors-list';
@@ -18,6 +19,11 @@ export class SkillsService {
   getSkillsList(): Observable<skill[]> {
     return of(skills);
   }
+
+  getSkillsList2(): Observable<skill[]> {
+    return of(skills2);
+  }
+
   getProjectsList(): Observable<project[]> {
     return of(projects);
   }
