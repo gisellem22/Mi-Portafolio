@@ -1,0 +1,11 @@
+.btn-start {
+    padding: 5px 10px;
+	border-radius: 4px;
+	background: #E61A55;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-start:hover {
+	background: #ee718a;
+}

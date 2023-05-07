@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsService } from '../../services/skills.service'
+import { SkillsService } from '../../services/skills.service';
 import { skill } from 'src/app/models/skill';
 
 @Component({
@@ -10,12 +10,17 @@ import { skill } from 'src/app/models/skill';
 export class SkillsComponent implements OnInit {
 
 skills: skill[];
+skills2: skill[];
 
-  constructor(public SkillsService: SkillsService) { }
+
+  constructor(public skillsService: SkillsService) { }
 
   ngOnInit() {
-this.SkillsService.getSkillsList().subscribe(skills => {
-      this.skills =skills;
+this.skillsService.getSkillsList().subscribe(skills => {
+      this.skills = skills;
+    });
+this.skillsService.getSkillsList2().subscribe(skills2 => {
+      this.skills2 = skills2;
     });
   }
 

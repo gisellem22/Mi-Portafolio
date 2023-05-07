@@ -1,82 +1,163 @@
-* {
-    margin: 0%;
-    padding: 0%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 body {
-    background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    color: #333333;
-    font-size: 16px;
-    word-spacing: 2px;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif !important;
+  color: #333333;
+  font-size: 16px;
+  word-spacing: 2px;
 }
+
+div,
+img,
+a,
+span,
+ul,
+li,
+button {
+  outline: none !important;
+}
+
+.top-standard {
+  padding-top: 160px;
+}
+
 .nav-container {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-  }
-h1,h2,h3,h4,h5,h6 {
-    color: #666666  ;
-}   
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #666666;
+}
 p {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    word-spacing: 1px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  word-spacing: 1px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #666666;;
-    font-family: 'Montserrat', sans-serif;
-    font-size:16px;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e61a55 !important;
+}
+.slick-dots li button:before {
+  color: #e61a55 !important;
+}
+div:focus,
+a:focus {
+  outline: none !important;
+}
+
+.responsive-super-height-none {
+  display: block;
+}
+.responsive-super-height-block {
+  display: none;
+}
+
+.height-contact {
+  height: calc(100% - 100px);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+  .my-email {
+    font-size: 30px;
+    font-weight: bold;
   }
-@media screen and (min-width:1024px) and (max-width:2000px){
-   
-    .my-email {
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .logoimg {
-        width: 40%;
-        height: 40%;
-    }
 }
-@media screen and (min-width:995px) and (max-width:1024px){
-    
-    .my-email {
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .logoimg {
-        width: 50%;
-        height: 50%;
-    }
+@media screen and (min-width: 995px) and (max-width: 1024px) {
+  .my-email {
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
-@media screen and (min-width:320px) and (max-width:995px){
-    
-    .my-email {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .logoimg {
-        width: 50%;
-        height:50%;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        margin-top: 15px;
-      }
+@media screen and (min-width: 321px) and (max-width: 995px) {
+  .my-email {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-top: 15px;
+  }
+  .img-modal {
+    width: 100%;
+    height: 350px !important;
+  }
+  .modal-content {
+    margin-top: 40%;
+  }
+  .top-resp {
+    margin-top: 120px;
+  }
+  .top-standard {
+    padding-top: 100px;
+  }
+
+  .height-contact {
+    height: 100% !important;
+  }
 }
-@media screen and (max-width:320px){
-    .my-email {
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .logoimg {
-        width: auto;
-        height: auto;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        margin-top: 15px;
-      }
+@media screen and (max-width: 320px) {
+  .my-email {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-top: 15px;
+  }
+  .img-modal {
+    width: 100%;
+    height: 300px !important;
+  }
+
+  .top-resp {
+    padding-top: 140px;
+  }
+  .top-standard {
+    padding-top: 100px;
+  }
+  .height-contact {
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 280px) {
+  .top-resp {
+    padding-top: 240px;
+  }
+}
+
+@media screen and (min-height: 1000px) and (max-width: 1024px) {
+  .responsive-super-height-none {
+    display: none;
+  }
+  .responsive-super-height-block {
+    display: block;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

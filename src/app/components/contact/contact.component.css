@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+}
+.my-email {
+  color: #e61a55;
+}
+.my-email:hover {
+  opacity: 0.6;
+}
+
+.icon-contact:hover {
+  background-color: #ffcddd;
+  border-radius: 75px;
+}
