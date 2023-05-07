@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (max-width: 325px) {
+/* @media screen and (max-width: 325px) {
   .grid li {
     width: 290px;
   }
@@ -122,4 +122,4 @@
     padding: 4px;
     height: 250px;
   }
-}
+} */
